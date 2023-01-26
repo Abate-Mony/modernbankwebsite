@@ -1,0 +1,19 @@
+.gpt3__brand {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 150px));
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.gpt3__brand div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gpt3__brand div:hover img {
+    transform: translateY(-1rem);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
