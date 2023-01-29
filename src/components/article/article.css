@@ -26,22 +26,32 @@
     font-family: var(--font-family);
     font-weight: bold;
     font-size: 12px;
-    line-height: 35px;
+    /* line-height: 35px; */
     color: #fff;
 }
 
 .gpt3__blog-container_article-content h3 {
     font-family: var(--font-family);
-    font-weight: 800;
+    font-weight: 700;
     font-size: 25px;
-    line-height: 30px;
+    /* line-height: 30px; */
     color: #fff;
     margin-bottom: 5rem;
     cursor: pointer;
 }
 
+.gpt3__blog-container_article-content h3::first-letter {
+    font-size: 2rem;
+}
+
 .gpt3__blog-container_article-content p:last-child {
     cursor: pointer;
+}
+
+@media screen and (max-width:992px) {
+    .gpt3__blog-container_article-content h3 {
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (max-width:550px) {
@@ -51,5 +61,8 @@
     .gpt3__blog-container_article-content h3 {
         font-size: 18px;
         line-height: 25px;
+    }
+    .gpt3__blog-container_article-content h3 {
+        font-size: 1.3rem;
     }
 }
